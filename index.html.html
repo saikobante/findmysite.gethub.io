@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>news</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+	*{margin: 0; padding: 0; box-sizing: border-box;}
+
+	body{ margin: 30px auto;width:90%; display: grid; grid-template-rows: 60px 70px 100px 400px 500px 200px 600px 600px 500px 100px ;
+		grid-template-columns: repeat(3, 1fr) 200px; grid-gap: 20px;}
+	
+
+	.div1{background-color: #77cc6d;grid-column:1/-1;border-radius: 10px; }
+	.div1 a{
+		font-size: 25px;float: right;margin: 20px;}
+		
+	.div1 h1{
+		padding-left: 20%;
+		font-family: sans-serif;font-size: 25px;margin: 10px;
+	}
+	.div2{background-color:#ECDEDC;grid-column: 1/4; border-radius: 10px; height: 60px; position: relative;}
+	.div2 h1{font-size: 15px;margin: 0 10px ;
+	}
+	.div2  li{
+		list-style: none; background: ;display: inline-block;float: right;font-weight: bold;
+	}
+	.div2 li a{
+		color: black;font-size: 20px;padding: 5px 10px; margin: 10px; }
+
+
+	.div3{background-color: black;height: 1350px;}
+	.div3 p{
+		color: yellow; font-weight: bold; font-size: 15px;
+	}
+
+	.div4{background-color: #1FEFD9 ; grid-column: 1/4; }
+	.div4 p{
+		font-size: 24px; font-weight: bold;
+	}
+	.div5{ grid-column: 1/3;}
+	.div5 p{
+		text-align: justify;font-size: 24px;
+	}
+	.div6{background-color: #EAF0ED ;grid-column: ;}
+	.div6 img{
+		float: right;
+	}
+	.div6 h1,p{
+		text-align: justify;
+	}
+	.div7{background-color: #16ABDA ; grid-column: 1/3;}
+	.div8{background-color: #DDF15D ; grid-column: 3/4;}
+	.div8 h1{
+		font-size: 25px;
+	}
+	.div9{ grid-column: 1/4;
+	}
+	.div9 p{
+		text-align: justify;}
+
+	.div10{ grid-column: 1/5;height: 600px;}
+	.div10 h1{ text-align: center; }
+	.div11{grid-column:1/5; height: 600px; background-color: #56212D ; }
+	.div11 h1{ color:tomato; ;text-align: center; padding-left: 40px;}
+	.div11 p{ color: white; font-weight: bold;font-size: 23px; }
+	.div11 .fix{
+		float: right;
+		display: flex;
+		flex-direction: column;
+		padding-right: 190px;
+		clear: both;
+		overflow: hidden;}
+	.div11 .fix.vid{
+	position: relative;
+	right: 0;
+	bottom: 0;
+	min-width: 400px;
+	min-height: 400px;
+	z-index: -1;
+}
+	.div12{ grid-column:  1/5; height: 500px;}
+	.div12 p{font-weight: bold;}
+	.div12 .btn{ background-color: red; color: white;width: 60px; height: 20px;cursor: pointer;transition: 0.6 ease; }
+	.div13{background-color: tomato; grid-column: 1/5;height: 330px;}
+	footer{
+margin: 0;
+padding: 0;
+color: #fff;
+}
+footer{
+	position: bottom;
+	padding-bottom:  10px;
+	width: 100%;
+	background: #5F4E4B;
+}
+.main-content{
+	display: flex;
+}
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.box .content{
+	margin: 20px 0 0 0;
+}
+.left .content p{
+	text-align: justify;
+}
+.left .content .social{
+	margin: 20px 0 0 0;
+}
+.left .content .social{
+	padding: : 0 20px;
+	}
+.left .content .social a span{
+	height: 40px;
+	width: 60px;
+	background: blue;
+	line-height: 40px;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 5px;
+	transition: 0.3s;
+	color: white;
+}
+.left .content .social a span:hover{
+background: grey;
+}
+.login-button{
+	padding-left: 280px;
+	padding-bottom: 10px;
+
+}
+.password{
+	padding-left: 41px;
+	font-weight: bold;
+
+}
+.email{
+	font-weight: bold;
+	padding-right: 10px;
+	margin-right: : 10px;
+}
+.website-login{
+	color: white;
+	float: right;
+	padding-top: 2px;
+	
+}
+.website-login a{
+	color: yellow;
+	float: right;
+	padding-right: 65px;
+}
+.website-login .email{
+	padding-right: 5px;
+}
+
+}
+	.div14{background-color: black; grid-column: 1/5;height: 60px; margin:40px;}
+	
+	
+	
+</style>
+<body>
+	<div class="div1">
+		
+		<a href="https://www.facebook.com/Thebikeshbikram/" target="_blank"><span class="fab fa-facebook-f" style="background: blue;width: 40px; text-align: center; color: white;"></span></a>
+ 					<a href="#"><span class="fab fa-twitter" style="background: blue; color: white; width: 40px;text-align: center;" ></span></a>
+ 					<a href="#"><span class="fab fa-instagram" style=" width: 40px; text-align: center;background-color: #d6249f; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) "></span></a>
+ 					<a href="https://www.youtube.com/channel/UCeJ6IuGFx_jNNAObhx9Qtkg" target="_blank"><span class="fab fa-youtube" style="background: white;color: red;"></span></a>
+ 					<h1>Latest Music & Videos</h1>
+	</div>
+	<div class="div2">
+		<h1>@bikesh_bikram</h1>
+		<ul> 
+			<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Food</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Home</a></li>
+			</ul>
+
+
+	</div>
+	<div class="div3">
+		<a href="https://www.altayermotors.com/ford/">
+		<img src="tire.gif" width="200" height="150">
+		<img src="ford.gif" width="200" height="150"></a>
+		<a href="https://amzn.to/3a8rywM">
+		<img src="razr.png" width="200" height="280">
+		<p>"Order Online" amazon.com</p></a>
+		<a href="https://amzn.to/3fIp7SR">
+		<p>"Life at Samsung"</p>	
+		<img src="stv.jpg" width="200">
+		</a>
+		<a href="https://www.pizzahut.ae/en/home">
+			<p>"For the love of Pizza"</p>
+			<img src="pizzaa.gif" width="200" height="400">
+		</a>
+	</div>
+	<div class="div4">
+		<p>When you feel like giving up just remember that there are a lot of people you still have to prove wrong. "The world is full of nice people. If you can't find one,be one".- Nishan Panwar. "Believe in yourself, take on your challenge, dig deep within yourself to conquer fears."</p>
+	</div>
+	<div class="div5">
+		
+		
+		<p>Singer Justin Bieber is set to release his new album, titled Changes, on February 14, the musician announced on Tuesday.watch more 
+
+The pop singer, who is returning to the music scene after five years, took to Instagram to share the news.
+
+"My new album #Changes out Feb 14. Pre-order and get the new track with my friend @kehlani 'Get Me' now," Bieber wrote. </p>
+<a href="https://www.youtube.com/watch?v=Y2E71oe0aSM">
+<img src="justin.png"  width="350" height="240">
+<img src="just.jpg"  width="300" height="240"></a>
+
+	</div>
+	<div class="div6">
+		<h1>Read This --------------</h1>
+
+		<P>November 3: A source confirms to<a href="https://www.youtube.com/watch?v=k6BN-jlitcw"> <img src="selena.jpg" height="90" width="90"></a> Us Weekly the pair are indeed a couple, saying “Selena always had feelings for Justin. Her friends want her to becautious because she has been in such a good place post-surgery.” TMZ also confirmed the romance was back, saying the pair are “clearly dating”.</P>
+		<hr>
+
+		<p>TAYLOR SWIFT new Official <a href="https://www.youtube.com/watch?v=K-a8s8OLBSE"><img src="taylor.png" height="90" width="90"></a>Music Video.
+		Official music video by Taylor Swift performing “cardigan” – off her album ‘folklore.’ </p>
+		<hr>
+		<p>Arthur Gunn(Dibesh Pokhrel)Nepalese-American singer-songwriter from Wichita,<a href="https://www.youtube.com/watch?v=drQlHxI6pUM"><img src="gunn.jpg" height="90" width="90"></a> Kansas who came to national attention in 2020 as the runner-up finalist on the eighteenth season of the singing reality show American Idol</p>
+
+	</div>
+	<div class="div7">
+		<h1>Taylor Swift is totally unrecognizable as 'The Man' in her latest music video</h1>
+		<img src="taylor.jpg" height="230" width="655">
+		<p>Cigar smoking, manspreading and relieving herself in a subway station? Not exactly the sort of behavior you’d expect from Taylor Swift, and that’s the point of her new music video for “The Man.”
+
+In order to illustrate the double standards between what behaviors are often excusable for men and damning for women, the superstar singer-songwriter does all of that and more in the clip — but you’d never know it was her doing it, thanks to a completely convincing disguise.</p>
+<p>In the video for “The Man,” Swift actually becomes the man to deliver her message.
+
+“I'd be a fearless leader/ I'd be an alpha type,” the 30-year-old’s lyrics ring out while she-as-he fist-bumps and self-aggrandizes through an office packed with cheering employees.
+
+Throughout, Swift paints a picture of what she sees as hypocrisy, from a male tennis star being allowed to have a “mantrum” on the court without criticism to displays of love-them-and-leave-them behavior being celebrated.</p>
+
+	</div>
+	<div class="div8">
+		<h1>Nepalese rap artiste Prakash Neupane on his socio-political songs</h1>
+		
+		<p>Prakash Neupane is critical of political issues in his country, Nepal. The talented 23-year-old was born and raised in Kohalpur, Banke in Nepal and<img src="pra.jpg" width="90" height="90"> is currently settled in Kathmandu. He has composed 40 songs and released three albums so far. He also composes for other artistes. “I was interested in writing poems and ghazals as a teenager and participated in extra curricular activities, where I won poetry prizes,” says Prakash. The hip-hop scene came into prominence in 2013-2014, and that is when Prakash began taking an interest in writing lyrics for rap songs. He honed his talent, which eventually came to be recognised. “Girish Khatiwada, a pioneer of Nephop in the 1990s, invited me to his radio show Nephop Show. During my college days, I listened to rap. I am also influenced by Raw Barz, a rap battling phenomenon in Nepal.”</p>
+
+	</div>
+	<div class="div9">
+		
+		<h1>There's a bit of bad news for Ed Sheeran fans this morning</h1>
+		<p>Ed Sheeran has revealed that he struggled with binge eating and excessive drinking at the height of his fame.
+
+The singer, 29, spoke at a Hay House summit about anxiety and wellbeing where he opened up about how his hectic 180-date touring schedule for the album X from 2014 to 2015 caused him to develop unhealthy habits.
+
+“I would stay up and drink all night and then sleep on the bus ... It’s all fun and games at the start, but then it starts getting sad,” Sheeran said. “That was probably the lowest that I’ve beenand I ballooned in weight. They used to call me ‘two-dinner Teddy’ because I used to order two meals and eat that.” There's a bit of bad news for Ed Sheeran fans this morning as the singer-songwriter announces that he isn't going to be releasing his fourth album, most likely titled 'Minus', until at least 2020.Sheeran is currently in the middle of a world tour off the back of his last album, 'Divide' - a record which divided critics' opinions due to its keen focus on first dance-fodder and weak club bangers.Still though, the fans want what the fans want and in this case, the fans want more music. Something that Ed has said he won't be able to deliver until after 2020.</p>
+	
+	</div>
+	<div class="div10">
+		<h1>Gai Jatra Special 2020</h1>
+		<img src="gaijatra.jpg" height="200" width="400">
+		<img src="gaijatra1.jpg" height="200" width="400">
+		<img src="gaijatra2.jpg" width="400" height="200">
+		<p>
+The festival’s name is Gai Jatra (literally meaning the festival of cows) and nowadays it is a fusion of three traditions that came into being in three different periods of time. The first and the oldest tradition incorporates a cult and a worship of the ancient god of death – Yamaraj. Thus, the festival marks the acceptance and celebration of death in a positive way, as an inevitable part of life. Every family who has lost a member, in the previous year, is supposed to lead a carefully and intricately decorated cow through the city. In the absence of a cow, a boy dressed as a cow (the oldest for a lost male memberand the younger for a female) can successfully take on the role.</p>
+<img src="gaijatra3.jpg" width="600" height="280" >
+<img src="gaijatra4.jpg" width="600" height="280">
+	</div>
+	<div class="div11">
+		<div class="fix">
+			<video src="justv.mp4"  class="vid" type="video/mp4" autoplay="true" loop="true" muted="true" width="400" height="700"></video>
+		</div>
+		<h1>--2020 Hits New Videos--</h1>
+		<p>Justin Bieber - Intentions (Official Video (Short Version)) ft. Quavo</p>
+		<video src="justv.mp4"  type="video/mp4"controls="true" height="100" width="200" >
+		</video> 
+	
+		<p>The Chainsmokers - Push My Luck (Official Video)		</p>
+		<video src="chainv.mp4" type="video/mp4" controls="true" height="100" width="200"></video>
+		<p>Ed Sheeran - I Don't Care (Live At Abbey Road)</p>
+		<video src="edv.mp4" type="video/mp4" controls="true" height="100" width="200"></video>
+		<p>Rihanna - Down (NEW SONG 2020)</p>
+		<video src="rihanav.mp4"  type="video/mp4"controls="true" height="100" width="200"></video>
+		
+	</div>
+	<div class="div12">
+		<img src="live.png" height="400" width="600">
+		<a href="https://amzn.to/3ikJuas">
+		<video src="moto.mp4" type="video/mp4" autoplay="true" loop="ture" muted="ture" height="400" width="500" >
+		</video></a>
+		<h1>Live From Home</h1>
+		<p>Your virtual hub updated daily with live streams from your favorite artists and more.</p>
+		<button class="btn">Go Live Now</button>
+	</div>
+	<div class="div13">
+		<meta charset="utf-8">
+ 	<title>Renpomsive Footer Section | sai ilamali</title>
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+ 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+ 	<footer>
+ 			<div class="main-content">
+ 			<div class="left box">
+ 				<h2>About us</h2>
+ 				<div class="content">
+ 					<p>We make online musical enjoyable for our friends and our followers alike, and have fun while we’re doing it.</p>
+ 					<div class="social">
+ 					<img src="me.jpg" width="90" height="100">
+ 					<h2 style="margin-bottom:20px">FOLLOW US</h2>	
+ 					<a href="https://www.facebook.com/Thebikeshbikram/" target="_blank"><span class="fab fa-facebook-f"></span></a>
+ 					<a href="#"><span class="fab fa-twitter"></span></a>
+ 					<a href="#"><span class="fab fa-instagram" style="background-color: #d6249f; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);color: white;"></span></a>
+ 					<a href="https://www.youtube.com/channel/UCeJ6IuGFx_jNNAObhx9Qtkg" target="_blank"><span class="fab fa-youtube"style="background-color: white;color: red;"></span></a>
+</style>
+ 				</div>	
+ 			</div>
+ 		</div>
+		<div class="center box">
+ 			<h2>Address</h2>
+ 			<div class="content">
+ 				<div class="place">
+ 					<span class="fas fa-map-marker-alt"></span>
+ 					<span class="text">Sharjha,Al Nahda,UAE</span>
+ 				</div>
+ 				<div class="phone">
+ 					<span class="fas fa-phone-alt"></span>
+ 					<span class="text">+971-569833791</span>
+ 				<div class="phone">
+ 					<span class="fas fa-phone-alt"></span>
+ 					<span class="text">+971-562269281</span>
+ 				</div>	
+ 				</div>
+ 				<div class="email">
+ 					<span class="fas fa-envelope"></span>
+ 					<span class="text">sailesh.lama@hotmail.com</span>
+ 				<div class="email">
+ 					<span class="fas fa-envelope"></span>
+ 					<span class="text">bikeu_848@hotmail.com</span>
+
+ 				</div>	
+ 				<p></p>
+ 				<br>
+ 				<br>
+ 				<br>
+ 				<br>
+
+ 				</div>
+ 				<img src="titanic.png" width="90" height="90">
+ 			</div>
+ 		</div>
+		<div class="right box">
+ 			<h2>Contact us</h2>
+ 			<div class="content">
+ 				<form action="#">
+ 					<div class="email">
+ 						<div class="text">Email *</div>
+ 						<input type="email" required>
+ 					</div>
+ 					<div class="msg">
+ 						<div class="text">Message *</div>
+ 						<textarea rows="4" cols="25" required></textarea>
+ 					</div>
+ 					<div class="2btn">
+ 						<button type="submit" action="sailesh.lama@hotmail.com" value="Send email"></button>
+ 						<br>
+ 						<br>
+ 						<br>
+ 						<br>
+ 						<br>
+ 						<br>
+ 						<br>
+						<div class="span6 footer_center qw-positionrelative">
+
+				Website Develop by: © BIKESHBIKRAM
+				</div>
+ 					</div>
+ 				</form>
+ 			</div>
+ 		</div>
+ 	</div>
+</body>
+</html>
+	</div>
+	<div class="div14">footer2</div>
+
+	
+		
+
+
+	
+
+
+</body>
+</html>
